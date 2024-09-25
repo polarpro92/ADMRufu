@@ -36,7 +36,7 @@ rm $(pwd)/$0 &> /dev/null
 if [[ $(which install-LIC) = "" ]]; then
   wget -O /usr/bin/install-LIC 'https://github.com/rudi9999/Rufu-LIC/raw/main/install-LIC'; chmod +x /usr/bin/install-LIC &>/dev/null
 fi
-install-LIC
+install_start
 [[ $? = 1 ]] && exit
 
 stop_install(){
